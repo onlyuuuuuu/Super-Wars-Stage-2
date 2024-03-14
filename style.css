@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.heros, .villian {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.super_hero, .super_villain {
+    text-align: center;
+    border: 2px solid black;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.super_hero img, .super_villian img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.info h3, .info p {
+    margin: 5px 0;
+}
+
+.hero-score, .villain-score {
+    text-align: center;
+}
+
+.hero-score h2, .villain-score h2 {
+    margin-bottom: 5px;
+}
+
+.hero-score p, .villain-score p {
+    font-weight: bold;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+}
+
+.H-score, .V-score {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
